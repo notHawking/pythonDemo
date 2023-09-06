@@ -1,10 +1,12 @@
 #https://www.grund-wissen.de/informatik/python/scipy/sympy.html
 import sympy as sy
+from sympy import *
+
 x = sy.S('x')
 
 a = sy.expand( (x + 2)**5 )
   
-print(a)
+#print(a)
 
 x1, x2, x3 = sy.symbols("x1 x2 x3")
 
@@ -15,4 +17,12 @@ equations = [
 ]
 
 b = sy.solve(equations)
-print(b)
+#print(b)
+
+M = Matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+print(M.det())
+
+x = sy.S('x')
+M = Matrix([[x, 3, 0], [x, 9, 2], [0, 2, 1]])
+print("Determinant as of x:",M.det())
