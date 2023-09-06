@@ -27,6 +27,6 @@ x = sy.S('x')
 M = Matrix([[x, 3, 0], [x, 9, 2], [0, 2, 1]])
 print("Determinant as of x:",M.det())
 
-EigenWertMatrix = Matrix([-12,-4],[18,5])
+EigenWertMatrix = Matrix([[-12,-4],[18,5]])
 EigenWerte=EigenWertMatrix.eigenvals()
 print(EigenWerte)
